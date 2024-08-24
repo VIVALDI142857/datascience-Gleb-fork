@@ -1,5 +1,9 @@
 выполненные задания переносим в Архив(внизу файла)
 ==================================
+Скачай репозиторий с гитхаб:
+1) вставь ссылку в браузер x-github-client://openRepo/https://github.com/SENATOROVAI/datascience-Gleb/
+2) если 1 пункт не сработал, альтернативный путь склонировать репозиторий https://youtu.be/UlgrwL49WOw?si=oCFvBGxgkIxEc2_m&t=149
+
 Открыть репозиторий в VSCODE и ПОТОМ ввести в терминале 3 команды(кнопка на верхней панеле VSCODE называется "Tерминал/Terminal"):
 1) pip install pre-commit
 1.1) pre-commit install
