@@ -137,7 +137,6 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-decorated
-          - --disallow-any-generics
           - --local-partial-types
           - --pretty
           - --force-uppercase-builtins
@@ -163,7 +162,6 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-decorated
-          - --disallow-any-generics
           - --local-partial-types
           - --pretty
           - --force-uppercase-builtins
