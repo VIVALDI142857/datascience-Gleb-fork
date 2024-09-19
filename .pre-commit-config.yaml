@@ -137,6 +137,7 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-decorated
+          - --disallow-any-generics
           - --local-partial-types
           - --pretty
           - --force-uppercase-builtins
@@ -144,6 +145,10 @@ repos:
           - --warn-unreachable
           - --warn-redundant-casts
           - --warn-return-any
+          - --disallow-any-explicit
+
+
+
 
 
 
@@ -162,6 +167,7 @@ repos:
           - --strict
           - --extra-checks
           - --disallow-any-decorated
+          - --disallow-any-generics
           - --local-partial-types
           - --pretty
           - --force-uppercase-builtins
@@ -169,6 +175,7 @@ repos:
           - --warn-unreachable
           - --warn-redundant-casts
           - --warn-return-any
+          - --disallow-any-explicit
 
 
         additional_dependencies:
