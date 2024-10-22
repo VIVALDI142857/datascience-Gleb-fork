@@ -36,7 +36,7 @@ jobs:
         nbqa isort --check-only --diff $(git ls-files '*.py' '*.ipynb')
     - name: pyupgrade
       run: |
-        pyupgrade $(git ls-files '*.py' '*.ipynb')
+        # pyupgrade $(git ls-files '*.py' '*.ipynb')
         nbqa pyupgrade $(git ls-files '*.py' '*.ipynb')
     - name: Black
       run: |
