@@ -28,8 +28,8 @@ jobs:
         nbqa flake8 --ignore=E203,E501,W291,F821,F401,E402,E121 $(git ls-files '*.py' '*.ipynb')
     - name: Mypy
       run: |
-        # mypy --exclude=misc --ignore-missing-imports --explicit-package-bases --ignore-missing-imports --disallow-untyped-calls --disallow-untyped-defs --disallow-untyped-decorators --strict --extra-checks --disallow-any-decorated --disallow-any-generics --local-partial-types --pretty --force-uppercase-builtins --force-union-syntax --force-union-syntax --warn-unreachable --warn-redundant-casts --warn-return-any $(git ls-files '*.py' '*.ipynb')
-        nbqa mypy --exclude=misc --ignore-missing-imports --explicit-package-bases --ignore-missing-imports --disallow-untyped-calls --disallow-untyped-defs --disallow-untyped-decorators --strict --extra-checks --disallow-any-decorated --disallow-any-generics --local-partial-types --pretty --force-uppercase-builtins --force-union-syntax --force-union-syntax --warn-unreachable --warn-redundant-casts --warn-return-any $(git ls-files '*.ipynb')
+        # mypy --exclude=^misc/ --ignore-missing-imports --explicit-package-bases --ignore-missing-imports --disallow-untyped-calls --disallow-untyped-defs --disallow-untyped-decorators --strict --extra-checks --disallow-any-decorated --disallow-any-generics --local-partial-types --pretty --force-uppercase-builtins --force-union-syntax --force-union-syntax --warn-unreachable --warn-redundant-casts --warn-return-any $(git ls-files '*.py' '*.ipynb')
+        nbqa mypy --exclude=^misc/ --ignore-missing-imports --explicit-package-bases --ignore-missing-imports --disallow-untyped-calls --disallow-untyped-defs --disallow-untyped-decorators --strict --extra-checks --disallow-any-decorated --disallow-any-generics --local-partial-types --pretty --force-uppercase-builtins --force-union-syntax --force-union-syntax --warn-unreachable --warn-redundant-casts --warn-return-any $(git ls-files '*.ipynb')
     - name: isort
       run: |
         isort --check-only --diff $(git ls-files '*.py' '*.ipynb')
