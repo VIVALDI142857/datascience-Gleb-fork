@@ -1,0 +1,33 @@
+name: bandit
+permissions:
+  contents: write 
+on:
+  push:
+    branches:
+      - "**"
+  schedule:
+    - cron: "0 0 * * *" # Run every day
+  workflow_dispatch:
+  create:
+  delete:
+  release:
+  issues:
+  pull_request:
+    branches:
+      - "**"
+jobs:
+  ruff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --user bandit
+      - run: bandit $(git ls-files '*.py' '*.ipynb')  
+      - name: Commit changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "actions@github.com"
+          git add .
+          git commit -m "" || echo "No changes to commit"
+          git push origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
