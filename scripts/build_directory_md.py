@@ -5,6 +5,7 @@ from collections.abc import Iterator
 
 
 def good_file_paths(top_dir: str = ".") -> Iterator[str]:
+    """SENATOROV."""
     for dir_path, dir_names, filenames in os.walk(top_dir):
         dir_names[:] = [
             d
@@ -19,10 +20,12 @@ def good_file_paths(top_dir: str = ".") -> Iterator[str]:
 
 
 def md_prefix(i):
+    """SENATOROV."""
     return f"{i * '  '}*" if i else "\n##"
 
 
 def print_path(old_path: str, new_path: str) -> str:
+    """SENATOROV."""
     old_parts = old_path.split(os.sep)
     for i, new_part in enumerate(new_path.split(os.sep)):
         if (i + 1 > len(old_parts) or old_parts[i] != new_part) and new_part:
@@ -31,6 +34,7 @@ def print_path(old_path: str, new_path: str) -> str:
 
 
 def print_directory_md(top_dir: str = ".") -> None:
+    """SENATOROV."""
     old_path = ""
     for filepath in sorted(good_file_paths(top_dir)):
         filepath, filename = os.path.split(filepath)
