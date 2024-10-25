@@ -36,13 +36,4 @@ jobs:
     - name: Mypy
       run: |
         nbqa mypy --exclude=^misc/ --ignore-missing-imports --explicit-package-bases --ignore-missing-imports --disallow-untyped-calls --disallow-untyped-defs --disallow-untyped-decorators --strict --extra-checks --disallow-any-decorated --disallow-any-generics --local-partial-types --pretty --force-uppercase-builtins --force-union-syntax --warn-unreachable --warn-redundant-casts --warn-return-any $(git ls-files '*.ipynb')
-    - name: Mypy
-      run: |
-        git config --local user.name "github-actions"
-        git config --local user.email "actions@github.com"
-        git add .
-        git commit -m "ВНИМАНИЕ! КОД ОТФОРМАТИРОВАН ПО PEP8 / SENATOROV" || echo "No changes to commit"
-        git push origin main --force
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-   
+    
