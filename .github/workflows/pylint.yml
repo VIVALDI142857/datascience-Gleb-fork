@@ -1,4 +1,4 @@
-name: "pylint"
+name: "SENATOROV"
 
 permissions:
   contents: write  # Grant write access to the repository contents
@@ -20,7 +20,7 @@ on:
   pull_request_review_comment:
 
 jobs:
-  build:
+  pylint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
