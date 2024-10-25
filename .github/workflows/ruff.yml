@@ -20,8 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install --user ruff
       - name: Ruff
+      - run: pip install --user ruff
       - run: ruff check --fix --output-format=github $(git ls-files '*.py' '*.ipynb')  # Lint Python files
       - name: Commit changes
         run: |
