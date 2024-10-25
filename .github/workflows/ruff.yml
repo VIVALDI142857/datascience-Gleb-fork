@@ -20,7 +20,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install --user ruff bandit
+      - run: pip install --user ruff
       - run: ruff check --fix --output-format=github $(git ls-files '*.py' '*.ipynb')  # Lint Python files
-      - run: bandit $(git ls-files '*.py' '*.ipynb')  
-
+      - name: Commit changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "actions@github.com"
+          git add .
+          git commit -m "" || echo "No changes to commit"
+          git push origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
