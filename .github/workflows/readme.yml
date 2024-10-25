@@ -1,4 +1,4 @@
-name: directory_writer
+name: "SENATOROV"
 permissions:
   contents: write
 on: [push]
