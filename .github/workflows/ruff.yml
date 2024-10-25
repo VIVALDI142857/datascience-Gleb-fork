@@ -1,4 +1,6 @@
 name: ruff_py
+permissions:
+  contents: write 
 on:
   push:
     branches:
