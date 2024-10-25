@@ -1,8 +1,6 @@
-# The objective of this GitHub Action is to update the DIRECTORY.md file (if needed)
-# when doing a git push
 name: directory_writer
 permissions:
-  contents: write 
+  contents: write
 on: [push]
 jobs:
   build:
@@ -14,6 +12,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+      - name: Set script executable permission
+        run: chmod +x scripts/build_directory_md.py
       - name: Write DIRECTORY.md
         run: |
           scripts/build_directory_md.py 2>&1 | tee DIRECTORY.md
@@ -23,5 +23,5 @@ jobs:
       - name: Update DIRECTORY.md
         run: |
           git add DIRECTORY.md
-          git commit -am "updating DIRECTORY.md" ||  true
+          git commit -am "updating DIRECTORY.md" || true
           git push --force origin HEAD:$GITHUB_REF || true
