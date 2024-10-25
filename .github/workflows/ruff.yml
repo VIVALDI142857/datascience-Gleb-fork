@@ -20,5 +20,5 @@ jobs:
       - uses: actions/checkout@v4
       - run: pip install --user ruff bandit
       - run: ruff check --fix --output-format=github $(git ls-files '*.py' '*.ipynb')  # Lint Python files
-      - run: bandit . 
+      - run: bandit $(git ls-files '*.py' '*.ipynb')  
 
