@@ -1,4 +1,4 @@
-name: CI/CD
+name: CI
 permissions:
   contents: write 
 on:
@@ -20,7 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Ruff
       - run: pip install --user ruff
       - run: ruff check --fix --output-format=github $(git ls-files '*.py' '*.ipynb')  # Lint Python files
       - name: Commit changes
