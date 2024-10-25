@@ -1,4 +1,4 @@
-name: bandit
+name: CI
 permissions:
   contents: write 
 on:
