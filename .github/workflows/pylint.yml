@@ -1,4 +1,4 @@
-name: "CI"
+name: "pylint"
 
 permissions:
   contents: write  # Grant write access to the repository contents
