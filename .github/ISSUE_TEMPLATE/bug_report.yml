@@ -23,7 +23,7 @@ body:
       required: false
   
   - type: textarea
-    attributes:
+    attributes: 
       label: "Screen"
       description: "Describe the behavior you expect. May include images or videos."
     validations:
