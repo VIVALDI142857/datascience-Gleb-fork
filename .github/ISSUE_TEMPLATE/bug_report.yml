@@ -69,6 +69,18 @@ body:
   - type: textarea
     attributes:
       label: "Actual behavior"
+     - type: textarea
+    attributes:
+      label: "Actual behavior with a description of how to reproduce the problem"
+    placeholder: |
+      ## Steps to Reproduce the Problem
+
+      1.
+      2.
+      3.
+    ...
+    validations:
+      required: true  
     validations:
       required: true
       
