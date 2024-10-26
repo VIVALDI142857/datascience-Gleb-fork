@@ -6,7 +6,7 @@ body:
     attributes:
       value: >
           Attention!
-          we insert an error message from the terminal into the name of the problem
+          <b>we insert an error message from the terminal into the name of the problem</b>
   - type: markdown
     attributes:
       value: >
