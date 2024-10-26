@@ -22,7 +22,12 @@ body:
     validations:
       required: false
   
- 
+ - type: textarea
+   attributes:
+      label: "Screen"
+      description: "Describe the behavior you expect. May include images or videos."
+    validations:
+      required: true
 
   - type: textarea
     attributes:
