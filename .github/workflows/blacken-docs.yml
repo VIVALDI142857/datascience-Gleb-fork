@@ -36,5 +36,4 @@ jobs:
     - name: Blacken-docs
       run: |
          nbqa blacken-docs --nbqa-md --nbqa-diff $(git ls-files '*.py' '*.ipynb')
-         blacken-docs --nbqa-md --nbqa-diff $(git ls-files '*.py' '*.ipynb')
 
