@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: >
-          Attention!
+          Attention! \n
           <b>we insert an error message from the terminal into the name of the problem</b>
   - type: markdown
     attributes:
