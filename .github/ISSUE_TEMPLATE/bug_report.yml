@@ -18,14 +18,21 @@ body:
 
   - type: textarea
     attributes:
-      label: "Dependencies version (pip freeze)"
+      label: "error from the terminal"
       description: >
-        This is the output of the command `pip freeze --all`. Note that the
-        actual output might be different as compared to the placeholder text.
+        copy the error from the terminal and paste it here, also provide log file if possible
       placeholder: |
-        appnope==0.1.3
-        asttokens==2.0.8
-        backcall==0.2.0
+        scripts/build_directory_md.py:22: error: Function is missing a type annotation 
+[no-untyped-def]
+    def md_prefix(i):
+    ^
+scripts/build_directory_md.py:32: error: Call to untyped function "md_prefix"
+in typed context  [no-untyped-call]
+                print(f"{md_prefix(i)} {new_part.replace('_', ' ').title()...
+                        ^~~~~~~~~~~~~
+scripts/build_directory_md.py:46: error: Call to untyped function "md_prefix"
+in typed context  [no-untyped-call]
+            print(f"{md_prefix(indent)} [{filename}]({url})")
         ...
     validations:
       required: true
