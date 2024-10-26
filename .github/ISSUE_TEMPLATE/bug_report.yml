@@ -71,7 +71,6 @@ body:
       label: "Actual behavior with a description of how to reproduce the problem"
       placeholder: |
         ## Steps to Reproduce the Problem
-  
         1.
         2.
         3.
