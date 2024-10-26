@@ -3,8 +3,8 @@ description: Create a bug report to help us address errors in the repository
 labels: [bug]
 body:
   - type: markdown
-      attributes:
-        value: >
+    attributes:
+      value: >
           Attention!
           we insert an error message from the terminal into the name of the problem
   - type: markdown
