@@ -9,13 +9,12 @@ body:
 
   - type: input
     attributes:
-      label: "Repository commit"
+      label: "Video"
       description: >
-        The commit hash for `SenatorovAI` repository. You can get this
-        by running the command `git rev-parse HEAD` locally.
-      placeholder: "a0b0f414ae134aa1772d33bb930e5a960f9979e8"
+        insert a link to a YouTube video where you demonstrate the problem and show how to reproduce it
+      placeholder: "link to the video"
     validations:
-      required: true
+      required: false
 
   - type: input
     attributes:
