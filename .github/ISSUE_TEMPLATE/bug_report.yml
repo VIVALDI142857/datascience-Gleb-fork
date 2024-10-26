@@ -53,7 +53,7 @@ body:
       required: true
       
    - type: checkboxes
-      id: cat-preferences
+      id: catpreferences
       attributes:
         label: What kinds of cats do you like?
         description: You may select more than one.
