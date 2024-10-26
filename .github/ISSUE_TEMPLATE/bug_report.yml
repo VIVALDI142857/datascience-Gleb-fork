@@ -24,15 +24,15 @@ body:
       placeholder: |
         scripts/build_directory_md.py:22: error: Function is missing a type annotation 
 [no-untyped-def]
-    def md_prefix(i):
+    def md_prefixi:
     ^
 scripts/build_directory_md.py:32: error: Call to untyped function "md_prefix"
 in typed context  [no-untyped-call]
-                print(f"{md_prefix(i)} {new_part.replace('_', ' ').title()...
+                print(f"{md_prefix i} {new_part.replace'_', ' '.title...
                         ^~~~~~~~~~~~~
 scripts/build_directory_md.py:46: error: Call to untyped function "md_prefix"
 in typed context  [no-untyped-call]
-            print(f"{md_prefix(indent)} [{filename}]({url})")
+            print(f"{md_prefixindent} [{filename}]{url}")
         ...
     validations:
       required: true
