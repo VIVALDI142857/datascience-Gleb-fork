@@ -15,7 +15,7 @@ body:
 
   - type: input
     attributes:
-      label: "Repository commit"
+      label: "Hash commit / link"
       description: >
         If possible, provide a hash of your commit or just paste the link to it here
       placeholder: "a0b0f414ae134aa1772d33bb930e5a960f9979e8"
