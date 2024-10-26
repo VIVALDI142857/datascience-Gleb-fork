@@ -26,7 +26,7 @@ body:
 
   - type: textarea
     attributes:
-      label: "error from the terminal"
+      label: "Error from the terminal"
       description: >
         copy the error from the terminal and paste it here, also provide log file if possible
       placeholder: |
