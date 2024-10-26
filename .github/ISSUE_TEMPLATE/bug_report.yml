@@ -15,6 +15,15 @@ body:
 
   - type: input
     attributes:
+      label: "Repository commit"
+      description: >
+        The commit hash for `SenatorovAI` repository.
+      placeholder: "a0b0f414ae134aa1772d33bb930e5a960f9979e8"
+    validations:
+      required: false
+      
+  - type: input
+    attributes:
       label: "Video"
       description: >
         insert a link to a YouTube video where you demonstrate the problem and show how to reproduce it
