@@ -65,11 +65,19 @@ body:
       description: "Describe the behavior you expect. May include images or videos."
     validations:
       required: true
-
   - type: textarea
     attributes:
-      label: "Actual behavior with a description of how to reproduce the problem"
+      label: "Actual behavior"
+      description: >
+        Actual behavior with a description of how to reproduce the problem
+      placeholder: |
+        ## Steps to Reproduce the Problem
+        1.
+        2.
+        3.
+        ...
     validations:
-      required: true  
+      required: true
+      
  
       
