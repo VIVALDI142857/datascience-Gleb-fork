@@ -3,6 +3,11 @@ description: Create a bug report to help us address errors in the repository
 labels: [bug]
 body:
   - type: markdown
+      attributes:
+        value: >
+          Attention!
+          we insert an error message from the terminal into the name of the problem
+  - type: markdown
     attributes:
       value: >
         Before requesting please search [existing issues](https://t.me/c/1937296927/3602/25534).
