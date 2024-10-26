@@ -3,7 +3,7 @@ permissions:
   contents: write
 on: [push]
 jobs:
-  README:
+  docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
