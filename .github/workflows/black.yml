@@ -37,4 +37,3 @@ jobs:
       run: |
         black --check --diff --line-length=79 $(git ls-files '*.py' '*.ipynb')
         nbqa black --check --diff --line-length=79 $(git ls-files '*.py' '*.ipynb')
-   

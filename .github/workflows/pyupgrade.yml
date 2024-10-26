@@ -35,5 +35,4 @@ jobs:
         pip install nbqa pyupgrade
     - name: pyupgrade
       run: |
-        nbqa pyupgrade --py37-plus $(git ls-files '*.py' '*.ipynb') 
-        
+        nbqa pyupgrade --py37-plus $(git ls-files '*.py' '*.ipynb')
