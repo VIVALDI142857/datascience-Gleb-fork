@@ -24,16 +24,16 @@ body:
   
   - type: textarea
     attributes: 
-      label: "Screen"
-      description: "Describe the behavior you expect. May include images or videos."
+      label: "Full screenshot"
+      description: "Attach a full screenshot of your screen, which will show the entire desktop and your error"
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: "Error from the terminal"
+      label: "Error from the terminal / Code"
       description: >
-        copy the error from the terminal and paste it here, also provide log file if possible
+        write the code or copy the error from the terminal and paste it here, also provide log file if possible
       placeholder: |
         scripts/build_directory_md.py:22: error: Function is missing a type annotation 
         [no-untyped-def]
