@@ -33,7 +33,7 @@ body:
   
   - type: textarea
     attributes: 
-      label: "Full screenshot"
+      label: "Attach a screenshot and write what did you do to fix the problem?"
       description: "Attach a full screenshot of your screen, which will show the entire desktop and your error"
     validations:
       required: true
