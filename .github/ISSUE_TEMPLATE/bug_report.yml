@@ -17,7 +17,7 @@ body:
       required: false
 
 
-  - type: markdown
+  - type: textarea
     attributes:
       label: "error from the terminal"
       description: >
