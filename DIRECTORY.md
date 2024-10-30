@@ -9,6 +9,8 @@
   * Made-Easy
     * [Chapter 11 Classes Python Made Easy](Python/made-easy/chapter_11_classes_python_made_easy.ipynb)
     * [Chapter 12 Errors And Exceptions](Python/made-easy/chapter_12_errors_and_exceptions.ipynb)
+    * [Chapter 13 Modules And Packages Python Made Easy](Python/made-easy/chapter_13_modules_and_packages_python_made_easy.ipynb)
+    * [Chapter 15 Numpy Library](Python/made-easy/chapter_15_numpy_library.ipynb)
     * [Chapter 1 Introduction To Data Science And Programming Basics.Ipynb](Python/made-easy/chapter_1_introduction_to_data_science_and_programming_basics.ipynb.ipynb)
     * [Chapter 2 Python Basics](Python/made-easy/chapter_2_python_basics.ipynb)
     * [Chapter 3 Python Basics](Python/made-easy/chapter_3_python_basics.ipynb)
