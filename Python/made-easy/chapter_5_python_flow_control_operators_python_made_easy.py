@@ -77,7 +77,7 @@
 
 
 def lesion_or_income(purchase_price: float, sell_price: float) -> None:
-    """подсчитывает доход и убыток трейдера."""
+    """Подсчитывает доход и убыток трейдера."""
     total: float = sell_price - purchase_price
     if total < 0:
         print("Your lesion is:", total)
@@ -129,7 +129,7 @@ exp(12, 4, 6)
 
 
 def triangle(angle_a: float, angle_b: float, angle_c: float) -> str:
-    """проверяет существование треугольника исходя из его углов."""
+    """Проверяет существование треугольника исходя из его углов."""
     if angle_a + angle_b + angle_c == 180:
         return "exists"
 
