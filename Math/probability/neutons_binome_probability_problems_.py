@@ -3,7 +3,6 @@
 # # Бином Ньютона
 
 
-
 # дз расписать бином ньютона до второй степени (с 0 ) и записать коэффициенты в треугольник паскаля
 
 # https://drive.google.com/file/d/1qMy87TuJKmxhPODhW74bG_I15t_pLzUs/view?usp=share_link
