@@ -40,3 +40,5 @@
 ## [Botstudy](/botstudy.py)
 
 ## [Log](/log.ipynb)
+
+## [Log](/log.py)
