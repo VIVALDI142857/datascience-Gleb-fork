@@ -2,8 +2,11 @@
 ## Math
   * Probability
     * [Independent Events Problems](Math/probability/independent_events_problems.ipynb)
+    * [Independent Events Problems](Math/probability/independent_events_problems.py)
     * [Neutons Binome Probability Problems ](Math/probability/neutons_binome_probability_problems_.ipynb)
+    * [Neutons Binome Probability Problems ](Math/probability/neutons_binome_probability_problems_.py)
     * [Three Problems Of Each Topic](Math/probability/three_problems_of_each_topic.ipynb)
+    * [Three Problems Of Each Topic](Math/probability/three_problems_of_each_topic.py)
 
 ## Python
   * Made-Easy
@@ -36,6 +39,7 @@
     * [Chapter 9 Input Output Of Data And Working With Files Python Made Easy](Python/made-easy/chapter_9_input_output_of_data_and_working_with_files_python_made_easy.ipynb)
     * [Chapter 9 Input Output Of Data And Working With Files Python Made Easy](Python/made-easy/chapter_9_input_output_of_data_and_working_with_files_python_made_easy.py)
   * [Python Iplementation](Python/python_iplementation.ipynb)
+  * [Python Iplementation](Python/python_iplementation.py)
 
 ## [Botstudy](/botstudy.py)
 
