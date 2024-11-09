@@ -1,16 +1,3 @@
-# ---
-# jupyter:
-#   jupytext:
-#     text_representation:
-#       extension: .py
-#       format_name: light
-#       format_version: '1.5'
-#       jupytext_version: 1.16.4
-#   kernelspec:
-#     display_name: base
-#     language: python
-#     name: python3
-# ---
 """Глава 4, практическая часть."""
 
 # 1 . Питер получает зарплату 12 ООО в месяц. Напишите код для вычисления его сбе­режений к концу года, если он будет откладывать 20% своей зарплаты каждый месяц.
