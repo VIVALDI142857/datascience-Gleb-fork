@@ -13,7 +13,3 @@ async def hello():
     print('Hello, Welcome to SENATOROV Education!')
 
 if__name__ == '__main__'
-
-git config --global user.name "VIVALDI142857"
-
-git config --global user.email "gleb.trofimov.07@mail.ru"
