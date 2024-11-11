@@ -43,8 +43,6 @@
     * [Chapter 9 Input Output Of Data And Working With Files Python Made Easy](Python/made-easy/chapter_9_input_output_of_data_and_working_with_files_python_made_easy.py)
   * [Python Implementation](Python/python_implementation.py)
 
-## [Botstudy](/botstudy.py)
-
 ## [Log](/log.ipynb)
 
 ## [Log](/log.py)
