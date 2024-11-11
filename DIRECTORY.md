@@ -38,8 +38,7 @@
     * [Chapter 8 Data Structures And Sequences Python Made Easy](Python/made-easy/chapter_8_data_structures_and_sequences_python_made_easy.py)
     * [Chapter 9 Input Output Of Data And Working With Files Python Made Easy](Python/made-easy/chapter_9_input_output_of_data_and_working_with_files_python_made_easy.ipynb)
     * [Chapter 9 Input Output Of Data And Working With Files Python Made Easy](Python/made-easy/chapter_9_input_output_of_data_and_working_with_files_python_made_easy.py)
-  * [Python Iplementation](Python/python_iplementation.ipynb)
-  * [Python Iplementation](Python/python_iplementation.py)
+  * [Python Implementation](Python/python_iplementation.py)
 
 ## [Botstudy](/botstudy.py)
 
