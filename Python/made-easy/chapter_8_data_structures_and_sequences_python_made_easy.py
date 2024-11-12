@@ -183,7 +183,7 @@ d_list
 
 # +
 e_list: list[tuple[int, ...]] = list(
-    sorted(it.product([1, 2, 3], repeat=2), key=lambda atb: atb[1]),
+    sorted(it.product([1, 2, 3], repeat=2), key=lambda atb: atb[1])
 )
 
 e_list

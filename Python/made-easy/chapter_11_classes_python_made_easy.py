@@ -522,11 +522,7 @@ class Rooms:
     """_summary_."""
 
     def __init__(
-        self,
-        room_number: int,
-        room_type: str,
-        rent_price: int,
-        capacity: int,
+        self, room_number: int, room_type: str, rent_price: int, capacity: int
     ) -> None:
         """_summary_.
 
@@ -561,11 +557,7 @@ class Meal:
     """_summary_."""
 
     def __init__(
-        self,
-        idmeal: int,
-        mealname: str,
-        price: int,
-        classification: str,
+        self, idmeal: int, mealname: str, price: int, classification: str
     ) -> None:
         """_summary_.
 
@@ -605,11 +597,7 @@ class Customer(Rooms, Meal):
     """
 
     def __init__(
-        self,
-        fullname: str,
-        phonenum: str,
-        room_number: int,
-        idmeal: int,
+        self, fullname: str, phonenum: str, room_number: int, idmeal: int
     ) -> None:
         """_summary_."""
         Rooms.__init__(self, room_number, "", 0, 0)

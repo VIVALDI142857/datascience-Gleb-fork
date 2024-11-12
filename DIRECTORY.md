@@ -41,8 +41,6 @@
   * [Python Iplementation](Python/python_iplementation.ipynb)
   * [Python Iplementation](Python/python_iplementation.py)
 
-## [Botstudy](/botstudy.py)
-
 ## [Log](/log.ipynb)
 
 ## [Log](/log.py)
