@@ -178,7 +178,7 @@ village lies in the South,
 Dronagiri is on the South-East.
 The area comprised of 95
 villages of Thane and
-Raigad Districts.""",
+Raigad Districts."""
         )
 
 
@@ -254,7 +254,7 @@ village lies in the South,
 Dronagiri is on the South-East.
 The area comprised # of 95
 villages of Thane and
-Raigad Districts.""",
+Raigad Districts."""
     )
 
 htg_in_file("file#.txt")
