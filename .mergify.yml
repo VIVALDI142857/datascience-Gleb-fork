@@ -1,0 +1,35 @@
+pull_request_rules:
+  - name: automatic merge when checks pass
+    conditions:
+      - "status-success=continuous-integration"
+      - "label!=work-in-progress"
+      - "base=main"
+    actions:
+      merge:
+        method: squash
+
+  - name: add "documentation" label to docs PRs
+    conditions:
+      - "files=docs/**"
+    actions:
+      label:
+        add:
+          - "documentation"
+
+  - name: close stale PRs
+    conditions:
+      - "updated_at<=-30 days"
+      - "label!=keep-open"
+    actions:
+      close:
+        message: "This PR has been automatically closed due to inactivity."
+
+  - name: auto-assign reviewers
+    conditions:
+      - "base=main"
+      - "author!=dependabot[bot]"
+    actions:
+      request_reviews:
+        users:
+          - "reviewer1"
+          - "reviewer2"
