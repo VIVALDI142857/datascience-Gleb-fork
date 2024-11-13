@@ -1,0 +1,19 @@
+name: Label Owner PRs
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  label_owner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR author is the repository owner
+        env:
+          OWNER: ${{ github.repository_owner }}
+          AUTHOR: ${{ github.actor }}
+        if: ${{ env.OWNER == env.AUTHOR }}
+        run: |
+          gh pr edit ${{ github.event.pull_request.number }} --add-label "owner"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
