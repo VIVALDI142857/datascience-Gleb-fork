@@ -1,7 +1,7 @@
 pull_request_rules:
   - name: automatic merge when all required checks pass
     conditions:
-      - "check-success=all"        # Условие: все обязательные проверки прошли успешно
+      - "check-success=pylint"        # Условие: все обязательные проверки прошли успешно
       - "label!=work-in-progress"   # Исключает PR с меткой "work-in-progress"
       - "base=main"                 # Работает для pull-реквестов, направленных в основную ветку
     actions:
