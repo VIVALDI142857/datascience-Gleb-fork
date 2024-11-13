@@ -1,16 +1,16 @@
 pull_request_rules:
-  - name: automatic merge when checks pass
+  - name: automatic merge when all required checks pass
     conditions:
-      - "status-success=continuous-integration"
-      - "label!=work-in-progress"
-      - "base=main"
+      - "check-success=all"        # Условие: все обязательные проверки прошли успешно
+      - "label!=work-in-progress"   # Исключает PR с меткой "work-in-progress"
+      - "base=main"                 # Работает для pull-реквестов, направленных в основную ветку
     actions:
       merge:
-        method: squash
+        method: merge               # Метод слияния "merge"
 
   - name: add "documentation" label to docs PRs
     conditions:
-      - "files=docs/**"
+      - "files=docs/**"             # Добавляет метку "documentation" для PR, изменяющих файлы в папке docs
     actions:
       label:
         add:
@@ -18,16 +18,16 @@ pull_request_rules:
 
   - name: close stale PRs
     conditions:
-      - "updated_at<=-30 days"
-      - "label!=keep-open"
+      - "age>30 days"               # Закрывает устаревшие PR, если им более 30 дней
+      - "label!=keep-open"          # Не закрывает PR с меткой "keep-open"
     actions:
       close:
         message: "This PR has been automatically closed due to inactivity."
 
   - name: auto-assign reviewers
     conditions:
-      - "base=main"
-      - "author!=dependabot[bot]"
+      - "base=main"                 # Назначает ревьюеров для PR в основную ветку
+      - "author!=dependabot[bot]"   # Исключает PR от бота Dependabot
     actions:
       request_reviews:
         users:
