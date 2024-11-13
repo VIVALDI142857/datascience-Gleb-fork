@@ -8,28 +8,4 @@ pull_request_rules:
       merge:
         method: merge               # Метод слияния "merge"
 
-  - name: add "documentation" label to docs PRs
-    conditions:
-      - "files=docs/**"             # Добавляет метку "documentation" для PR, изменяющих файлы в папке docs
-    actions:
-      label:
-        add:
-          - "documentation"
-
-  - name: close stale PRs
-    conditions:
-      - "age>30 days"               # Закрывает устаревшие PR, если им более 30 дней
-      - "label!=keep-open"          # Не закрывает PR с меткой "keep-open"
-    actions:
-      close:
-        message: "This PR has been automatically closed due to inactivity."
-
-  - name: auto-assign reviewers
-    conditions:
-      - "base=main"                 # Назначает ревьюеров для PR в основную ветку
-      - "author!=dependabot[bot]"   # Исключает PR от бота Dependabot
-    actions:
-      request_reviews:
-        users:
-          - "reviewer1"
-          - "reviewer2"
+ 
