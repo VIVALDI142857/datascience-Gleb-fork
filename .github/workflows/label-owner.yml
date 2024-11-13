@@ -1,19 +1,25 @@
-name: Label Owner PRs
+name: Label Writer PRs
 
 on:
   pull_request:
     types: [opened]
 
 jobs:
-  label_owner:
+  label_writer:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if PR author is the repository owner
+      - name: Check if PR author has write access or higher
         env:
-          OWNER: ${{ github.repository_owner }}
           AUTHOR: ${{ github.actor }}
-        if: ${{ env.OWNER == env.AUTHOR }}
         run: |
-          gh pr edit ${{ github.event.pull_request.number }} --add-label "owner"
+          # Получаем уровень доступа автора PR
+          PERMISSION=$(gh api \
+            -H "Accept: application/vnd.github.v3+json" \
+            /repos/${{ github.repository }}/collaborators/${{ env.AUTHOR }}/permission \
+            | jq -r .permission)
+          # Если уровень доступа "write", "admin" или "maintain", добавляем метку "writer"
+          if [[ "$PERMISSION" == "write" || "$PERMISSION" == "admin" || "$PERMISSION" == "maintain" ]]; then
+            gh pr edit ${{ github.event.pull_request.number }} --add-label "writer"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
