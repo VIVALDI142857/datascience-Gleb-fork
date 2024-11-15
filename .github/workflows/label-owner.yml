@@ -1,0 +1,35 @@
+name: Label Writer PRs
+
+on:
+  push:
+    branches:
+      - "**"
+   
+  schedule:
+    - cron: "0 0 * * *" # Run every day
+  workflow_dispatch:
+  create:
+  delete:
+  release:
+  issues:
+ 
+
+jobs:
+  label_writer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR author has write access or higher
+        env:
+          AUTHOR: ${{ github.actor }}
+        run: |
+          # Получаем уровень доступа автора PR
+          PERMISSION=$(gh api \
+            -H "Accept: application/vnd.github.v3+json" \
+            /repos/${{ github.repository }}/collaborators/${{ env.AUTHOR }}/permission \
+            | jq -r .permission)
+          # Если уровень доступа "write", "admin" или "maintain", добавляем метку "writer"
+          if [[ "$PERMISSION" == "write" || "$PERMISSION" == "admin" || "$PERMISSION" == "maintain" ]]; then
+            gh pr edit ${{ github.event.pull_request.number }} --add-label "writer"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

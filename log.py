@@ -5,7 +5,7 @@ import numpy as np
 import scipy as sc
 import scipy.special as scs
 import seaborn as sns
-
+ 
 # # 24.08
 # Вводный урок, начали разбирать комбинаторику:
 #
