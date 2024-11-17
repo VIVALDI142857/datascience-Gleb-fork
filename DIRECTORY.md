@@ -10,9 +10,14 @@
 
 ## Python
   * Data Cleaning Section
+    * [Data Cleaning Kaggle Tutorial](Python/data_cleaning_section/data_cleaning_kaggle_tutorial.ipynb)
     * [Data Cleaning With Pandas](Python/data_cleaning_section/data_cleaning_with_pandas.ipynb)
+    * [Data Cleaning With Pandas](Python/data_cleaning_section/data_cleaning_with_pandas.py)
     * [Fixing Wrong Data With Pandas](Python/data_cleaning_section/fixing_wrong_data_with_pandas.ipynb)
+    * [Fixing Wrong Data With Pandas](Python/data_cleaning_section/fixing_wrong_data_with_pandas.py)
+    * [Regex For Ds Tutorial](Python/data_cleaning_section/regex_for_ds_tutorial.ipynb)
     * [Regex Pandas](Python/data_cleaning_section/regex_pandas.ipynb)
+    * [Regex Pandas](Python/data_cleaning_section/regex_pandas.py)
   * Made-Easy
     * [Chapter 11 Classes Python Made Easy](Python/made-easy/chapter_11_classes_python_made_easy.ipynb)
     * [Chapter 11 Classes Python Made Easy](Python/made-easy/chapter_11_classes_python_made_easy.py)
